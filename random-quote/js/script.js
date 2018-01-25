@@ -39,7 +39,7 @@ function printQuote () {
       document.getElementById('quote-box').innerHTML = message;
 }
 
-// function sets 5 second intervals for a new quote to appear
+// function sets 10 second intervals for a new quote to appear
 var intervalID = window.setInterval(myCallback, 10000);
 function myCallback() {
   printQuote();

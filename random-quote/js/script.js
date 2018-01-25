@@ -40,7 +40,7 @@ function printQuote () {
 }
 
 // function sets 5 second intervals for a new quote to appear
-var intervalID = window.setInterval(myCallback, 5000);
+var intervalID = window.setInterval(myCallback, 10000);
 function myCallback() {
   printQuote();
 }

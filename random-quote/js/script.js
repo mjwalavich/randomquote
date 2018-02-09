@@ -30,6 +30,16 @@ function getRandomQuote() {
   return quotes [randomNumber];
 }
 
+// Applies Random color when printQuote function executes
+function getRandomColor() {
+    var red = Math.floor(Math.random() * 256 );
+    var green = Math.floor(Math.random() * 256 );
+    var blue = Math.floor(Math.random() * 256 );
+    var rgbColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
+
+    document.body.style.background = rgbColor;
+}
+
 // function prints quote to HTML
 function printQuote () {
   var randomQuote = getRandomQuote ();
